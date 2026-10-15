@@ -1,16 +1,28 @@
 <?php
-$opcao= -1;
-while($opcao != 0) {
-    echo "\n ___ MENU ___ \n";
-    echo "1- cadastrar aluno\n";
-echo "2- cadastrar aluno\n";
-echo "3- cadastrar aluno\n";
-echo "0- sair\n";
+$opcao = -1;
+while ($opcao != 0) {
+    echo "1 - Cadastrar aluno<br>";
+    echo "2 - Consultar aluno<br>";
+    echo "3 - Excluir aluno<br>";
+    echo "0 - Sair<br>";
+    $opcao = (int) readline("Escolha uma opção: ");
 
-echo "escolha uma opção: ";
-$opcao = (int) readline();
-if ($opcao)
-
-
+    switch ($opcao) {
+        case 1:
+            echo "Cadastrar aluno<br>";
+            break;
+        case 2:
+            echo "Consultar aluno<br>";
+            break;
+        case 3:
+            echo "Excluir aluno<br>";
+            break;
+        case 0:
+            echo "Saindo do programa...<br>";
+            break;
+        default:
+            echo "Opção inválida!<br>";
+    }
+    echo "\n";
 }
 ?>
