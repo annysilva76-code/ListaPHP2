@@ -1,10 +1,14 @@
 <?php
 
 $senha = 1234;
-$tentativas = intval(readline("Digite sua senha: "));
-
+$tentativas= 0;
 while ($tentativas != $senha){
-    echo "Digite sua senha: ";
+   $tentativas = intval(readline("Digite sua senha: "));
+if ($tentativas != $senha) {
+    echo "acesso negado.\n";
 }
-
+else {
+    echo "acesso permitido.";
+}
+}
 ?>
